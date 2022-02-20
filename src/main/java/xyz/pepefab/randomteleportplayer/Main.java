@@ -5,6 +5,7 @@ import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
+import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import xyz.pepefab.randomteleportplayer.Commands.RandomTeleportPlayerCommand;
 
@@ -13,9 +14,10 @@ public class Main
 {
     public static final String MODID = "uprandomteleportplayer";
     public static final String NAME = "UPRandomTeleportPlayer";
-    public static final String VERSION = "0.1";
+    public static final String VERSION = "0.2";
 
     private static Logger logger;
+    public static Logger log = LogManager.getLogger(Main.NAME);
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
